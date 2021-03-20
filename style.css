@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: "Open Sans";
+   user-select:none;
+
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-size: 4.5rem;
+  border: 0px transparent;
+  height: 100vh;
+  text-align: center;
+}
+
+.c-display {
+  grid-area: 1 / 1 / 2 / 5;
+  background-color: black;
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  font-size: 7rem;
+
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity ease-in-out 0.2s;
+}
+.key:active{
+  box-shadow:  inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+
+}
+.key:hover {
+  opacity: 0.8;
+  box-shadow:  inset 0 0 14px 0px rgba(0, 0, 0, 0.1);
+}
+.number:active{
+  box-shadow:  inset 0 0 14px 0px rgba(255, 165, 0, 0.5);
+
+}
+.number:hover{
+  background-color: lightgrey;
+
+}
+
+
+.operator {
+  background-color: orange;
+}
+
+.equals {
+  background-color: pink;
+}
+
+.clear,
+.backspace {
+  background-color: black;
+  color: white;
+}
+.clear:hover,
+.backspace:hover {
+  transition: opacity ease-in-out 0.2s;
+  background-color: lightcoral;
+  opacity: 1;
+  color: red
+}
+
+.addition {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.subtraction {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.multiplication {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.division {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.equals {
+  grid-area: 3 / 4 / 6 / 5;
+}
+
+.zero {
+  grid-area: 6 / 1 / 7 / 2;
+}
+
+.one {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.two {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.three {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+.four {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.five {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.six {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.seven {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.eight {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.nine {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.decimal {
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.clear {
+  grid-area: 6 / 3 / 7 / 4;
+}
+
+.backspace {
+  grid-area: 6 / 4 / 7 / 5;
+}
